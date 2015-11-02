@@ -6,21 +6,21 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
+/*-------Hidden Items from Webpage-------*/
+	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls {
+		display: none;
+	}
+/*---------END--------*/
+
 /*removes all floats and margins from normal version of website*/
-	body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container  {
+	html, body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container {
 		float: none;
-		clear: both;
-		display: block;
+/*		clear: both;
+*/		display: block;
 		position: static;
 		margin: 0;
 		/*text-align: center;*/
 	}
-
-	/*-------Hidden Items from Webpage-------*/
-	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls {
-		display: none;
-	}
-	/*---------END--------*/
 
 	html { 
 	  background: url(images/mobile_main_bkg.png) no-repeat center center fixed; 
@@ -31,9 +31,7 @@ and (max-device-width : 480px) {
 	}
 
 	#main_content {
-
 		background: none;
-		background: green;
 		width: 100%;
 		height: 100%;
 	}
@@ -109,23 +107,26 @@ and (max-device-width : 480px) {
 
 
 	#book_cover {
+		float: left;
 		background: red;
 		width: 50%;
 		height: auto;
+		margin: 0 25px 0 48px;
+/*		width: 50%;
+		height: auto;*/
 		/*margin: 0 0 0 48px;*/
 	}
 
 	#white_circle_container {
-		background: yellow;
-		width: 40%;
+		margin: 0 48px;
+/*		width: 40%;*/
 	}
 
 	#white_circle_container > p {
-		background: grey;
 		font-size: 2.3em;
 		font-weight: bolder;
 		line-height: 1.3em;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.new_line {
@@ -152,6 +153,7 @@ and (max-device-width : 480px) {
 	}
 
 	#contact_mobile > a {
+		background: green;
 		color: red;
 	}
 
