@@ -196,3 +196,7 @@ a {
 	top: 310px;
 	left: 10px;
 }
+
+#contact_mobile {
+	display: none;
+}
