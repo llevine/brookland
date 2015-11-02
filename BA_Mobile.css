@@ -6,57 +6,66 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
-	body {
-		/*background: red;*/
-		width: 100%;
+/*-------Hidden Items from Webpage-------*/
+	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls {
+		display: none;
 	}
+/*---------END--------*/
 
-	#container { 
-		background: none;
-		display: block;
-		width: 90%; 
-		height: initial;
-		margin: 0px auto; 
-		margin-top: 35px;
-	}
-
-	.logo, #tagline, #bars, #book_cover, #purple_circle, #white_cicle, #orange_circle, #magenta_circle, #girls {
+/*removes all floats and margins from normal version of website*/
+	html, body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container {
 		float: none;
-		clear: both;
-		display: block;
-		width: 100%;
+/*		clear: both;
+*/		display: block;
 		position: static;
-		margin: 0 auto;
-		text-align: center;
+		margin: 0;
+		/*text-align: center;*/
 	}
 
+	html { 
+	  background: url(images/mobile_main_bkg.png) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
 
-	.logo > img { 
-		width: 85%;
+	#main_content {
+		background: none;
+		width: 100%;
+		height: 100%;
+	}
+
+	#header {
+		background: url(images/mobile_head_bkg.png);
+		background-size: contain;
+		background-size: 100% 100%;
+		padding: 20px 0;
+	}
+
+	#logo {
+		width: 65%;
 		height: auto;
-		margin-top: 20px;
+		margin: 30px auto;
 	}
 
-	#social_media { 
-		display: inline-block;
-		float: none;
-		position: relative;
-		top: 1645px;
+	#tagline {
 		width: 100%;
-		margin: 0 auto;
+		margin-bottom: 14px;
+
+		font-size: 2em;
+		font-style: italic;
 		text-align: center;
 	}
 
-	#tagline { 
-		margin-top: -8px;
-		margin-bottom: 28px;
-		/*margin: 0px auto;*/
+/*---------COLOR BARS---------*/
+
+	#color_divider {
+		margin-bottom: 48px;
 	}
 
-	#bars { 
-		float: left;
-		width: 100%;
-		height: 48px;
+	#red, #orange, #yellow, #green, #cyan, #blue, #purple {
+		height: 35px;
 	}
 
 	#red { 
@@ -66,12 +75,12 @@ and (max-device-width : 480px) {
 
 	#orange { 
 		background: #FF6C2C; 
-		width: 6%; 
+		width: 16%; 
 	}
 
 	#yellow { 
 		background: #DAD224; 
-		width:9%; 
+		width: 19%; 
 	}
 
 	#green { 
@@ -81,108 +90,72 @@ and (max-device-width : 480px) {
 
 	#cyan { 
 		background: #00AEEF; 
-		width: 8%; 
+		width: 18%; 
 	}
 
 	#blue { 
 		background: #252885; 
-		width: 60%; 
-		height: 48px;
-		padding: 0;
-	}
-
-	#contact, #contact > a {
-		font-family: Arial, Helvetica, sans-serif; 
-		font-size: 1.1em; 
-		font-weight: bold; 
-		color: white; 
-		text-align: center; 
-		height: 45px;
-		line-height: 45px;
-		padding: 0;
+		width: 30%; 
 	}
 
 	#purple { 
-		float: left; 
 		background: #62269E; 
 		width: 4%; 
 	}
 
-	#book_cover { 	
-		display: block;
-		margin-top: 150px;	
-		padding-bottom: 55px;	
-	}
+/*---------END---------*/
 
-	#book_cover > img {
-		width: 75%;
+
+	#book_cover {
+		float: left;
+		background: red;
+		width: 50%;
 		height: auto;
+		margin: 0 25px 0 48px;
+/*		width: 50%;
+		height: auto;*/
+		/*margin: 0 0 0 48px;*/
 	}
 
-	#purple_circle { 
-		background-image: url(images/PurpleCircle.png);
-		background-repeat: no-repeat;
-		width: 126px; 
-		height: 106px; 
-		position: relative;
-		bottom: 985px;
-		right: 37%;
-		font-family: Arial, Helvetica, sans-serif; 
-		font-size: .9em; 
-		font-weight: bolder; 
-		text-align: center; 
+	#white_circle_container {
+		margin: 0 48px;
+/*		width: 40%;*/
 	}
 
-	#white_cicle  {
-		margin-top: -125px;
-		display: block;
-		background-image: url(images/Brooklad_Adventures_Bkgd_mobile.png); 
-		background-repeat: no-repeat;
-		background-position: 66% 35%;
-		background-size: 150%;	
+	#white_circle_container > p {
+		font-size: 2.3em;
+		font-weight: bolder;
+		line-height: 1.3em;
+		text-align: left;
 	}
 
-
-	#white_cicle > p {
-		font-family: Arial, Helvetica, sans-serif; 
-		font-size: 1.2em; 
-		text-align: center;  
-		line-height: 1.6em;
+	.new_line {
+		display: initial;
 	}
 
-	#orange_circle { 
-		width: 213px; 
-		height: 185px; 
-		background-image: url(images/OrangeCircle.png);
-		background-repeat: no-repeat;
+/*---------CHANGING THE COLORS IN THE MAIN TEXT'S STRONG TAGS---------*/
+	.purple {
+		color: purple;
+	}
 
-		font-family: Arial, Helvetica, sans-serif; 
-		font-size: 1em; 
+	.red {
+		color: red;
+	}
+
+/*---------END---------*/
+
+	#contact_mobile {
+		display: initial;
+		margin: 20px auto;
+		color: #1284C7;
+
+		font-size: 2em;
+		font-weight: bold; 
 		text-align: center;
-		color: white; 
-
-		position: relative;
-		bottom: 600px;
-		left: 36%;
 	}
 
-	#magenta_circle { 
-		width: 51px; 
-		height: 51px; 
-		background-image: url(images/Magenta_circle.png); 
-		background-repeat: no-repeat;
-		position: relative;
-		right: 41%; 
-		bottom: 320px; 	
+	#contact_mobile > a {
+		color: purple;
 	}
 
-	#girls { 
-		width: 140px; 
-		height: 140px; 
-		background-image: url(images/girls.png); 
-		background-repeat: no-repeat;
-		position: relative;
-		left: 41%; 
-		bottom: 690px; 
-	}
 }
