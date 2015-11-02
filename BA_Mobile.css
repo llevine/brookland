@@ -146,15 +146,16 @@ and (max-device-width : 480px) {
 
 	#contact_mobile {
 		display: initial;
-/*		position: relative;
-		bottom: 10px;*/
+		margin: 20px auto;
+		color: #1284C7;
 
-		color: cyan;
+		font-size: 2em;
+		font-weight: bold; 
+		text-align: center;
 	}
 
 	#contact_mobile > a {
-		background: green;
-		color: red;
+		color: purple;
 	}
 
 }
