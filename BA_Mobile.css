@@ -23,11 +23,7 @@ and (max-device-width : 480px) {
 	}
 
 	html { 
-	  background: url(images/mobile_main_bkg.png) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	  background: url(images/Brooklad_Adventures_Bkgd_mobile.png); 
 	}
 
 	#main_content {
@@ -36,24 +32,37 @@ and (max-device-width : 480px) {
 		height: 100%;
 	}
 
-	#header {
-		background: url(images/mobile_head_bkg.png);
-		background-size: contain;
-		background-size: 100% 100%;
-		padding: 20px 0;
+	.new_line {
+		display: block;
 	}
 
+	.new_line:not(.mobile) {
+		display: initial;
+	}
+
+	#header {
+		background: url(images/Brooklad_Adventures_Bkgd_mobile_header.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+/*		background-size: contain;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		*/
+		padding-bottom: 120px;
+}
+
 	#logo {
-		width: 65%;
+		width: 55%;
 		height: auto;
-		margin: 30px auto;
+		margin: 0 auto;
 	}
 
 	#tagline {
 		width: 100%;
-		margin-bottom: 14px;
 
 		font-size: 2em;
+		line-height: 1.3em;
 		font-style: italic;
 		text-align: center;
 	}
@@ -129,9 +138,6 @@ and (max-device-width : 480px) {
 		text-align: left;
 	}
 
-	.new_line {
-		display: initial;
-	}
 
 /*---------CHANGING THE COLORS IN THE MAIN TEXT'S STRONG TAGS---------*/
 	.purple {
@@ -158,4 +164,8 @@ and (max-device-width : 480px) {
 		color: purple;
 	}
 
+}
+
+.dot_divider {
+	display: none;
 }

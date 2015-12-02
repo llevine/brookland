@@ -133,7 +133,7 @@ a {
 	text-transform: uppercase;
 }
 
-.new_line {
+.new_line:not(.mobile) {
 	display: block;
 }
 
