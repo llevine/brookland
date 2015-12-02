@@ -161,7 +161,7 @@ a {
 }
 
 #white_circle_container { 
-	margin: 14px 0 0 66px;
+	margin: 15px 0 0 66px;
 }
 
 #white_circle_container > p {
@@ -221,6 +221,6 @@ a {
 	left: 10px;
 }
 
-#contact_mobile {
+#contact_mobile, #header_image {
 	display: none;
 }

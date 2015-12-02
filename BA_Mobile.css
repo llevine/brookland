@@ -40,37 +40,43 @@ and (max-device-width : 480px) {
 		display: initial;
 	}
 
-	#header {
-		background: url(images/Brooklad_Adventures_Bkgd_mobile_header.png);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
+	#header_image {
+		display: initial;
+		width: 100%;
+		height: auto;
 
-/*		background-size: contain;
-		background-size: 100%;
-		background-repeat: no-repeat;
-		*/
-		padding-bottom: 120px;
-}
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: -1;
+	}
+
+	#header {
+		margin: 9%;
+	}
 
 	#logo {
-		width: 55%;
+		width: 80%;
 		height: auto;
 		margin: 0 auto;
+		margin-top: -20px;
 	}
 
 	#tagline {
 		width: 100%;
 
-		font-size: 2em;
-		line-height: 1.3em;
+		font-size: 2.3em;
+		line-height: 1.4em;
 		font-style: italic;
 		text-align: center;
+		margin-top: 20px;
 	}
 
 /*---------COLOR BARS---------*/
 
 	#color_divider {
-		margin-bottom: 48px;
+		position: absolute;
+		bottom: 0;
 	}
 
 	#red, #orange, #yellow, #green, #cyan, #blue, #purple {
@@ -116,8 +122,6 @@ and (max-device-width : 480px) {
 
 
 	#book_cover {
-		float: left;
-		background: red;
 		width: 50%;
 		height: auto;
 		margin: 0 25px 0 48px;
@@ -138,22 +142,10 @@ and (max-device-width : 480px) {
 		text-align: left;
 	}
 
-
-/*---------CHANGING THE COLORS IN THE MAIN TEXT'S STRONG TAGS---------*/
-	.purple {
-		color: purple;
-	}
-
-	.red {
-		color: red;
-	}
-
-/*---------END---------*/
-
 	#contact_mobile {
 		display: initial;
 		margin: 20px auto;
-		color: #1284C7;
+		color: black;
 
 		font-size: 2em;
 		font-weight: bold; 
@@ -161,7 +153,7 @@ and (max-device-width : 480px) {
 	}
 
 	#contact_mobile > a {
-		color: purple;
+		color: black;
 	}
 
 }
