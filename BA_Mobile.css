@@ -1,14 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900);
 
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 /*-------Hidden Items from Webpage-------*/
-	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls {
+	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls, .dot_divider {
 		display: none;
+		visibility: hidden;
 	}
 /*---------END--------*/
 
@@ -43,25 +45,28 @@ and (max-device-width : 480px) {
 	#header {
 		background: url(images/Brooklad_Adventures_Bkgd_mobile_header.png);
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
-
+		background-size: 100%;
+		padding-bottom: 10%;
 /*		background-size: contain;
 		background-size: 100%;
 		background-repeat: no-repeat;
 		*/
-		padding-bottom: 120px;
+		/**/
 }
 
 	#logo {
-		width: 55%;
+		width: 62%;
 		height: auto;
 		margin: 0 auto;
+		padding-top: 70px;
 	}
 
 	#tagline {
 		width: 100%;
+		margin-top: 28px;
+		/*padding-bottom: 219px;*/
 
-		font-size: 2em;
+		font-size: 2.5em;
 		line-height: 1.3em;
 		font-style: italic;
 		text-align: center;
@@ -70,11 +75,12 @@ and (max-device-width : 480px) {
 /*---------COLOR BARS---------*/
 
 	#color_divider {
-		margin-bottom: 48px;
+		clear: both;
+		height: 45px;
 	}
 
 	#red, #orange, #yellow, #green, #cyan, #blue, #purple {
-		height: 35px;
+		height: 45px;
 	}
 
 	#red { 
@@ -116,56 +122,45 @@ and (max-device-width : 480px) {
 
 
 	#book_cover {
-		float: left;
-		background: red;
 		width: 50%;
 		height: auto;
-		margin: 0 25px 0 48px;
-/*		width: 50%;
-		height: auto;*/
-		/*margin: 0 0 0 48px;*/
+		margin: 2em auto;
 	}
 
 	#white_circle_container {
-		margin: 0 48px;
-/*		width: 40%;*/
+		display: block;
+		width: 84%;
+		margin: 100px auto;
 	}
 
 	#white_circle_container > p {
-		font-size: 2.3em;
-		font-weight: bolder;
-		line-height: 1.3em;
+		font-size: 3em;
+		line-height: 1.5em;
 		text-align: left;
 	}
 
-
-/*---------CHANGING THE COLORS IN THE MAIN TEXT'S STRONG TAGS---------*/
-	.purple {
-		color: purple;
+	#white_circle_container .caps {
+		font-size: inherit;
+		font-weight: 700;
+		line-height: inherit;
+		letter-spacing: inherit;
+		text-transform: none;
 	}
 
-	.red {
-		color: red;
-	}
-
-/*---------END---------*/
 
 	#contact_mobile {
-		display: initial;
-		margin: 20px auto;
-		color: #1284C7;
+		display: inline-block;
+		color: black;
 
 		font-size: 2em;
-		font-weight: bold; 
-		text-align: center;
+		font-weight: 700; 
+		margin: 2em auto;
 	}
 
-	#contact_mobile > a {
-		color: purple;
+	#contact_mobile a {
+		color: black;
 	}
 
 }
 
-.dot_divider {
-	display: none;
-}
+
