@@ -69,7 +69,13 @@ and (max-device-width : 480px) {
 
 	#social_media_container {
 		float: right;
-		margin: 22px 54px;
+		margin: 30px 45px;
+		margin-bottom: 33px;
+	}
+
+	.social_media {
+		width: 50px;
+		margin-right: 15px;
 	}
 
 /*---------COLOR BARS---------*/
