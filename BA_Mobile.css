@@ -8,14 +8,14 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 /*-------Hidden Items from Webpage-------*/
-	#social_media_container, #contact, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls, .dot_divider {
+	.web, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls, .dot_divider {
 		display: none;
 		visibility: hidden;
 	}
 /*---------END--------*/
 
 /*removes all floats and margins from normal version of website*/
-	html, body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container {
+	html, body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container, #social_media_container {
 		float: none;
 /*		clear: both;
 */		display: block;
@@ -47,11 +47,6 @@ and (max-device-width : 480px) {
 		background-repeat: no-repeat;
 		background-size: 100%;
 		padding-bottom: 10%;
-/*		background-size: contain;
-		background-size: 100%;
-		background-repeat: no-repeat;
-		*/
-		/**/
 }
 
 	#logo {
@@ -64,12 +59,17 @@ and (max-device-width : 480px) {
 	#tagline {
 		width: 100%;
 		margin-top: 28px;
-		/*padding-bottom: 219px;*/
 
 		font-size: 2.5em;
 		line-height: 1.3em;
 		font-style: italic;
 		text-align: center;
+	}
+
+
+	#social_media_container {
+		float: right;
+		margin: 22px 54px;
 	}
 
 /*---------COLOR BARS---------*/
@@ -148,17 +148,18 @@ and (max-device-width : 480px) {
 	}
 
 
-	#contact_mobile {
-		display: inline-block;
+	#contact {
 		color: black;
 
 		font-size: 2em;
-		font-weight: 700; 
+
 		margin: 2em auto;
 	}
 
-	#contact_mobile a {
+	#contact a {
 		color: black;
+
+		font-weight: 700;
 	}
 
 }

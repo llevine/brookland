@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900);
-
+@import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
 
 body {
 	width: 100%;
@@ -16,7 +16,7 @@ body {
 	background-image: url(images/Brooklad_Adventures_Bkgd.png); 
 	background-repeat: no-repeat;
 
-	font-family: Arial, Helvetica, sans-serif; 
+	font-family: 'Source Sans Pro', sans-serif; 
 }
 
 a {
@@ -107,11 +107,15 @@ a {
 }
 
 #contact { 
-	font-size: 15px;
-	font-weight: bold; 
-	color: white; 
+	color: #E5E285; 
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: .5px; 
+
 	text-align: center;
-	line-height: 50%;
+	line-height: 10%;	
 }
 
 /*-----------END-----------*/
@@ -141,6 +145,10 @@ a {
 	font-weight: 700;
 }
 
+.strong.title {
+	font-style: italic;
+}
+
 #purple_circle_container { 
 	background-image: url(images/PurpleCircle.png); 
 	width: 126px;
@@ -154,7 +162,8 @@ a {
 	color: white;
 
 	font-size: 14px; 
-	font-weight: bolder; 
+	font-weight: 700;
+	letter-spacing: 1px; 
 	line-height: 20px; 
 	text-align: center;
 
@@ -198,6 +207,8 @@ a {
 #orange_circle_container > p {
 	margin-top: 25px;
 
+	letter-spacing: 1px;
+	font-weight: 600;
 	line-height: 22px;
 	text-align: center;
 	color: white; 
@@ -219,8 +230,4 @@ a {
 	position: relative;
 	top: 310px;
 	left: 10px;
-}
-
-#contact_mobile {
-	display: none;
 }
