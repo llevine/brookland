@@ -231,3 +231,11 @@ a {
 	top: 310px;
 	left: 10px;
 }
+
+#contact > a:hover {
+	color: #FF6C2C;
+}
+
+
+
+
