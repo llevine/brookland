@@ -8,14 +8,14 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 /*-------Hidden Items from Webpage-------*/
-	.web, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls, .dot_divider {
+	.web, #purple_circle_container, #orange_circle_container, #magenta_circle, #girls, .dot_divider, #book_cover, #rightColumn, .contact {
 		display: none;
 		visibility: hidden;
 	}
 /*---------END--------*/
 
 /*removes all floats and margins from normal version of website*/
-	html, body, #main_content, #header, #logo, #tagline, #book_cover, #color_divider, #white_circle_container, #social_media_container {
+	html, body, #main_content, #header, #logo, #tagline, #book_cover_mobile, #color_divider, #white_circle_container, #social_media_container {
 		float: none;
 /*		clear: both;
 */		display: block;
@@ -40,6 +40,10 @@ and (max-device-width : 480px) {
 
 	.new_line:not(.mobile) {
 		display: initial;
+	}
+
+	.new_line.mobile {
+		display: none;
 	}
 
 	#header {
@@ -127,10 +131,11 @@ and (max-device-width : 480px) {
 /*---------END---------*/
 
 
-	#book_cover {
-		width: 50%;
-		height: auto;
-		margin: 2em auto;
+	#book_cover_mobile {
+		display: block !important;
+		width: 50% !important;
+		height: auto !important;
+		margin: -196px auto 5em !important;
 	}
 
 	#white_circle_container {
@@ -139,10 +144,21 @@ and (max-device-width : 480px) {
 		margin: 100px auto;
 	}
 
-	#white_circle_container > p {
-		font-size: 3em;
-		line-height: 1.5em;
-		text-align: left;
+	#white_circle_container > p, #white_circle_container > h5 > span {
+		font-size: 3em !important;
+		line-height: 1.5em !important;
+		text-align: left !important;
+	}
+
+	#white_circle_container > h5 > span {
+		color: #252885;
+		font-size: 3.5em !important;
+		font-weight: 900 !important;
+		letter-spacing: .02em !important;
+	}
+
+	#white_circle_container > h5 {
+		margin: 145px 0 -10px !important;
 	}
 
 	#white_circle_container .caps {
